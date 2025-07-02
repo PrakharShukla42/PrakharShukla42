@@ -49,11 +49,6 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PrakharShukla42&layout=compact&theme=tokyonight" width="45%" />
 </p>
 
-<h3>🔥 GitHub Streak:</h3>
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=PrakharShukla42&theme=tokyonight" width="80%" />
-</p>
-
 
 ---
 
