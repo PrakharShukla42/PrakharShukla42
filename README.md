@@ -53,7 +53,7 @@
 
 <h3>🎯 LeetCode Stats:</h3>
 <p align="center">
-  <img src="https://leetcard.jacoblin.cool/therockstarop9956?theme=dark&font=Karma&ext=contest" alt="LeetCode Stats" width="70%" />
+  <img src="https://leetcard.jacoblin.cool/PrakharShukla42?theme=dark&font=Karma&ext=contest" alt="LeetCode Stats" width="70%" />
 </p>
 
 ---
