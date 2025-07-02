@@ -45,9 +45,15 @@
 
 <h3>📊 GitHub Stats:</h3>
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=PrakharOP&show_icons=true&theme=tokyonight" alt="Prakhar's GitHub Stats" width="45%"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PrakharOP&layout=compact&theme=tokyonight" alt="Top Languages" width="45%"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=PrakharShukla42&show_icons=true&theme=tokyonight" width="45%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PrakharShukla42&layout=compact&theme=tokyonight" width="45%" />
 </p>
+
+<h3>🔥 GitHub Streak:</h3>
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=PrakharShukla42&theme=tokyonight" width="80%" />
+</p>
+
 
 ---
 
