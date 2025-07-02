@@ -45,7 +45,7 @@
 
 <h3>📊 GitHub Stats:</h3>
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=PrakharShukla42&show_icons=true&theme=tokyonight" width="45%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PrakharShukla42&layout=compact&theme=tokyonight&langs_count=10&exclude_repo=demo-css-project,html-only-stuff,template-repo" width="45%" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PrakharShukla42&layout=compact&theme=tokyonight" width="45%" />
 </p>
 
