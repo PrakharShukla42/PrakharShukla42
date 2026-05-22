@@ -1,40 +1,9 @@
 <!-- Futuristic Cyberpunk GitHub Profile README for Prakhar Shukla -->
 
-<!-- Interactive Animated Header Banner (Using relative path to bypass Camo proxy issues) -->
+<!-- Interactive Animated Holographic Header Banner (Terminal & Info Embedded inside SVG) -->
 <p align="center">
-  <img src="./header.svg" alt="Prakhar's Cyberpunk Banner" width="100%">
+  <img src="./header.svg" alt="Prakhar's Cyberpunk Console" width="100%">
 </p>
-
-<!-- Authentic macOS/Linux Terminal Emulator Mockup (Clean, realistic, no emojis) -->
-<div align="center">
-  <div style="max-width: 650px; border: 1px solid #30363d; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.6), 0 0 15px rgba(0, 229, 255, 0.15); overflow: hidden; background-color: #0d1117; font-family: 'Courier New', Courier, monospace;">
-    <!-- Terminal Title Bar -->
-    <div style="background-color: #161b22; padding: 10px 15px; display: flex; align-items: center; border-bottom: 1px solid #30363d;">
-      <!-- macOS style traffic lights -->
-      <div style="display: flex; gap: 6px;">
-        <span style="width: 12px; height: 12px; border-radius: 50%; background-color: #ff5f56; display: inline-block;"></span>
-        <span style="width: 12px; height: 12px; border-radius: 50%; background-color: #ffbd2e; display: inline-block;"></span>
-        <span style="width: 12px; height: 12px; border-radius: 50%; background-color: #27c93f; display: inline-block;"></span>
-      </div>
-      <!-- Center Title -->
-      <div style="flex-grow: 1; text-align: center; color: #8b949e; font-size: 12px; font-weight: bold; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">
-        bash - prakhar@iiot-core:~
-      </div>
-    </div>
-    <!-- Terminal Body Window -->
-    <div style="padding: 20px; text-align: left; font-size: 14px; line-height: 1.6; color: #c9d1d9;">
-      <span style="color: #58a6ff;">prakhar@iiot-core:~$</span> ./initialize_profile.sh<br>
-      <span style="color: #8b949e;">[+] Initializing cybernet telemetry...</span><br>
-      <span style="color: #56b6c2; font-weight: bold;">[+] STATUS         :</span> <span style="color: #58a6ff; font-weight: bold; text-shadow: 0 0 5px #58a6ff;">ONLINE</span><br>
-      <span style="color: #56b6c2; font-weight: bold;">[+] SPECIALIZATION :</span> CS Specialization in Industrial IoT (IIoT)<br>
-      <span style="color: #56b6c2; font-weight: bold;">[+] STACK_CORE     :</span> MERN Full-Stack Web &amp; Python Programming<br>
-      <span style="color: #56b6c2; font-weight: bold;">[+] COMMS_PORT     :</span> therockstarop9956@gmail.com<br>
-      <span style="color: #56b6c2; font-weight: bold;">[+] DIAGNOSTIC     :</span> Humor level stable (Funny xD)<br>
-      <br>
-      <span style="color: #58a6ff;">prakhar@iiot-core:~$</span> <span style="background-color: #58a6ff; color: #0d1117; display: inline-block; width: 8px; height: 15px; vertical-align: middle;"></span>
-    </div>
-  </div>
-</div>
 
 ---
 
