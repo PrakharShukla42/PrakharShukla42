@@ -73,36 +73,24 @@
 
 ### 📊 System Diagnostics & Cyber Stats
 
-<div align="center">
-  <table border="0" cellpadding="5" cellspacing="5" width="100%">
-    <tr>
-      <!-- Column 1: GitHub Stats Mirror (Using high-reliability endpoints) -->
-      <td width="50%" valign="top" align="center">
-        <h4>[ GITHUB PROTOCOLS ]</h4>
-        <!-- Mirror endpoint for maximum reliability -->
-        <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=PrakharShukla42&show_icons=true&theme=tokyonight&count_private=true&hide_border=false" width="100%" alt="GitHub Stats" />
-        <br/><br/>
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=PrakharShukla42&theme=tokyonight&hide_border=false" width="100%" alt="Streak Stats" />
-      </td>
-      <!-- Column 2: LeetCode & GitHub Activity ECG Graph -->
-      <td width="50%" valign="top" align="center">
-        <h4>[ LEETCODE &amp; LANGUAGES ]</h4>
-        <img src="https://leetcard.jacoblin.cool/PrakharShukla42?theme=dark&font=Karma&ext=contest" alt="LeetCode Stats" width="100%" />
-        <br/><br/>
-        <!-- Stable mirror for languages -->
-        <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=PrakharShukla42&layout=compact&theme=tokyonight" width="100%" alt="Top Languages" />
-      </td>
-    </tr>
-    <!-- Full-Width Row: Cyber Signal ECG Graph -->
-    <tr>
-      <td colspan="2" align="center" style="padding-top: 15px;">
-        <h4>[ RECENT HEARTBEAT SIGNAL ]</h4>
-        <!-- Ultra-stable animated graph matching IIoT theme -->
-        <img src="https://github-readme-activity-graph.vercel.app/graph?username=PrakharShukla42&theme=tokyonight&bg_color=0d1117&hide_border=false" width="98%" alt="GitHub Activity Graph" />
-      </td>
-    </tr>
-  </table>
-</div>
+<p align="center">
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=PrakharShukla42&show_icons=true&theme=tokyonight&count_private=true&hide_border=false" width="48%" alt="GitHub Stats" />
+  &nbsp;&nbsp;
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=PrakharShukla42&layout=compact&theme=tokyonight" width="48%" alt="Top Languages" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=PrakharShukla42&theme=tokyonight&hide_border=false" width="48%" alt="Streak Stats" />
+  &nbsp;&nbsp;
+  <img src="https://leetcard.jacoblin.cool/PrakharShukla42?theme=dark&font=Karma&ext=contest" width="48%" alt="LeetCode Stats" />
+</p>
+
+<br/>
+
+<h4 align="center">[ RECENT HEARTBEAT SIGNAL ]</h4>
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=PrakharShukla42&theme=tokyonight&bg_color=0d1117&hide_border=false" width="98%" alt="GitHub Activity Graph" />
+</p>
 
 ---
 
