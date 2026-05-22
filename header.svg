@@ -250,25 +250,25 @@
     
     <text x="0" y="45" class="cosmic-title">PRAKHAR SHUKLA</text>
     
-    <text x="0" y="78" class="cosmic-subtitle" fill="#ffffff" font-size="17">B.Tech CS <tspan fill="#00ffcc">|</tspan> Specialization in <tspan class="cosmic-accent">IIoT</tspan></text>
+    <text x="0" y="80" class="cosmic-subtitle" fill="#ffffff" font-size="17">B.Tech CS <tspan fill="#00ffcc">|</tspan> Specialization in <tspan class="cosmic-accent">IIoT</tspan></text>
     
-    <text x="0" y="105" class="telemetry-text" fill="#a4b3e6" font-size="13">&gt; BRIDGING CYBER SYSTEMS &amp; INDUSTRIAL HARDWARE NETWORKS</text>
+    <text x="0" y="112" class="telemetry-text" fill="#a4b3e6" font-size="13">&gt; BRIDGING CYBER SYSTEMS &amp; INDUSTRIAL HARDWARE NETWORKS</text>
   </g>
-
+ 
   <!-- Sleek Badges at Bottom -->
   <g transform="translate(60, 260)" class="glass-badge">
-    <rect width="115" height="26" rx="6" fill="#080826" fill-opacity="0.6" stroke="#9d84ff" stroke-opacity="0.5" stroke-width="1" />
-    <text x="57" y="17" class="badge-text" text-anchor="middle">MERN STACK</text>
+    <rect width="130" height="26" rx="6" fill="#080826" fill-opacity="0.6" stroke="#9d84ff" stroke-opacity="0.5" stroke-width="1" />
+    <text x="65" y="17" class="badge-text" text-anchor="middle">MERN STACK</text>
   </g>
-
-  <g transform="translate(190, 260)" class="glass-badge-delay">
-    <rect width="90" height="26" rx="6" fill="#080826" fill-opacity="0.6" stroke="#00ffcc" stroke-opacity="0.5" stroke-width="1" />
-    <text x="45" y="17" class="badge-text" fill="#00ffcc" text-anchor="middle">PYTHON</text>
+ 
+  <g transform="translate(215, 260)" class="glass-badge-delay">
+    <rect width="100" height="26" rx="6" fill="#080826" fill-opacity="0.6" stroke="#00ffcc" stroke-opacity="0.5" stroke-width="1" />
+    <text x="50" y="17" class="badge-text" fill="#00ffcc" text-anchor="middle">PYTHON</text>
   </g>
-
-  <g transform="translate(295, 260)" class="glass-badge">
-    <rect width="75" height="26" rx="6" fill="#080826" fill-opacity="0.6" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1" />
-    <text x="37.5" y="17" class="badge-text" fill="#ffffff" text-anchor="middle">IIoT</text>
+ 
+  <g transform="translate(340, 260)" class="glass-badge">
+    <rect width="85" height="26" rx="6" fill="#080826" fill-opacity="0.6" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1" />
+    <text x="42.5" y="17" class="badge-text" fill="#ffffff" text-anchor="middle">IIoT</text>
   </g>
 
   <!-- Glowing Accent Line -->
