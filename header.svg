@@ -1,47 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="100%" height="100%">
   <defs>
-    <!-- Import Futuristic Fonts -->
+    <!-- Futuristic Styling with Safe System Monospace and Modern Sans-Serif Fonts (No external imports that CSP blocks) -->
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&amp;family=Share+Tech+Mono&amp;family=Rajdhani:wght@500;700&amp;display=swap');
-
-      /* General Styles */
       .bg {
         fill: #0a0b10;
       }
       .grid-lines {
         stroke: #1f2335;
         stroke-width: 1;
-        opacity: 0.35;
-      }
-      .neon-glow-cyan {
-        filter: drop-shadow(0 0 8px rgba(0, 229, 255, 0.8));
-      }
-      .neon-glow-magenta {
-        filter: drop-shadow(0 0 8px rgba(255, 0, 127, 0.8));
+        opacity: 0.3;
       }
       
-      /* Typography */
+      /* Typography using standard beautiful fonts */
       .title {
-        font-family: 'Orbitron', -apple-system, sans-serif;
+        font-family: 'Courier New', Monaco, 'Courier', monospace, system-ui;
         font-weight: 900;
         font-size: 42px;
         fill: #ffffff;
         letter-spacing: 5px;
       }
       .subtitle {
-        font-family: 'Rajdhani', sans-serif;
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
         font-weight: 700;
         font-size: 20px;
         fill: #00e5ff;
         letter-spacing: 3px;
       }
       .mono-text {
-        font-family: 'Share Tech Mono', monospace;
+        font-family: 'Courier New', Monaco, 'Courier', monospace;
         font-size: 14px;
         fill: #a9b1d6;
       }
       .badge-text {
-        font-family: 'Share Tech Mono', monospace;
+        font-family: 'Courier New', Monaco, 'Courier', monospace;
         font-size: 12px;
         fill: #00e5ff;
         font-weight: bold;
@@ -62,26 +53,9 @@
         to { transform: rotate(360deg); }
       }
       @keyframes glitch {
-        0% {
-          transform: translate(0);
-          text-shadow: none;
-        }
-        2% {
-          transform: translate(-2px, 1px);
-          text-shadow: -2px 0 #ff007f, 2px 0 #00e5ff;
-        }
-        4% {
-          transform: translate(1px, -1px);
-          text-shadow: -2px 0 #ff007f, 2px 0 #00e5ff;
-        }
-        6% {
-          transform: translate(0);
-          text-shadow: none;
-        }
-        100% {
-          transform: translate(0);
-          text-shadow: none;
-        }
+        0%, 100% { transform: translate(0); }
+        33% { transform: translate(-1px, 1px); }
+        66% { transform: translate(1px, -1px); }
       }
       @keyframes float {
         0%, 100% { transform: translateY(0px); }
@@ -89,11 +63,7 @@
       }
       @keyframes signal {
         0% { r: 2px; opacity: 1; }
-        100% { r: 15px; opacity: 0; }
-      }
-      @keyframes scanline {
-        0% { transform: translateY(-350px); }
-        100% { transform: translateY(350px); }
+        100% { r: 18px; opacity: 0; }
       }
 
       /* Class Mappings to Animations */
@@ -119,33 +89,17 @@
         animation-delay: 2s;
       }
       .signal-wave {
-        transform-origin: center;
+        transform-origin: 680px 175px;
         animation: signal 2s infinite cubic-bezier(0.1, 0.8, 0.3, 1);
       }
       .signal-wave-delay {
-        transform-origin: center;
+        transform-origin: 680px 175px;
         animation: signal 2s infinite cubic-bezier(0.1, 0.8, 0.3, 1);
         animation-delay: 1s;
       }
     </style>
 
-    <!-- Glowing Filters -->
-    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-    <filter id="glow-magenta" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-
-    <!-- Linear Gradients -->
+    <!-- Linear Gradients for neon-glow paths -->
     <linearGradient id="neon-grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#00e5ff" />
       <stop offset="50%" stop-color="#7928ca" />
@@ -195,14 +149,14 @@
     <line x1="0" y1="320" x2="800" y2="320" />
   </g>
 
-  <!-- Glowing Tech circuit line along the bottom -->
+  <!-- Tech circuit line along the bottom -->
   <path d="M 0,330 L 180,330 L 210,300 L 450,300 L 470,320 L 800,320" 
-        fill="none" stroke="url(#neon-grad)" stroke-width="2.5" filter="url(#glow-cyan)" />
+        fill="none" stroke="url(#neon-grad)" stroke-width="3" />
   <path d="M 0,330 L 180,330 L 210,300 L 450,300 L 470,320 L 800,320" 
         fill="none" stroke="#ffffff" stroke-width="1.2" class="animated-dash" />
 
   <!-- Heads-Up Display (HUD) Rotating Element on Right -->
-  <g class="hud-rotate" opacity="0.45">
+  <g class="hud-rotate" opacity="0.5">
     <circle cx="680" cy="175" r="90" fill="none" stroke="#00e5ff" stroke-width="1" stroke-dasharray="10, 20" />
     <circle cx="680" cy="175" r="75" fill="none" stroke="#ff007f" stroke-width="1.5" stroke-dasharray="40, 15" />
     <circle cx="680" cy="175" r="60" fill="none" stroke="#00e5ff" stroke-width="0.75" />
@@ -211,18 +165,18 @@
     <polygon points="680,165 685,178 675,178" fill="none" stroke="#00e5ff" stroke-width="1" />
   </g>
 
-  <!-- Dynamic Glowing IIoT (Industrial IoT) Nodes Overlay on Right -->
+  <!-- Dynamic Glowing IIoT Nodes Overlay on Right -->
   <g class="animated-pulse">
     <!-- Node 1 (Center) -->
-    <circle cx="680" cy="175" r="5" fill="#00e5ff" filter="url(#glow-cyan)" />
+    <circle cx="680" cy="175" r="6" fill="#00e5ff" />
     <!-- Node 2 (Top Left) -->
-    <circle cx="610" cy="110" r="4" fill="#ff007f" filter="url(#glow-magenta)" />
+    <circle cx="610" cy="110" r="5" fill="#ff007f" />
     <line x1="680" y1="175" x2="610" y2="110" stroke="#ff007f" stroke-width="1.5" opacity="0.6" stroke-dasharray="5,5" />
     <!-- Node 3 (Bottom Left) -->
-    <circle cx="600" cy="240" r="4" fill="#00e5ff" filter="url(#glow-cyan)" />
+    <circle cx="600" cy="240" r="5" fill="#00e5ff" />
     <line x1="680" y1="175" x2="600" y2="240" stroke="#00e5ff" stroke-width="1" opacity="0.6" />
     <!-- Node 4 (Top Right) -->
-    <circle cx="750" cy="100" r="3" fill="#00e5ff" opacity="0.8" />
+    <circle cx="750" cy="100" r="4" fill="#00e5ff" opacity="0.8" />
     <line x1="680" y1="175" x2="750" y2="100" stroke="#00e5ff" stroke-width="0.75" opacity="0.4" />
   </g>
 
@@ -230,17 +184,13 @@
   <circle cx="680" cy="175" r="10" fill="none" stroke="#00e5ff" stroke-width="1.5" class="signal-wave" />
   <circle cx="680" cy="175" r="10" fill="none" stroke="#ff007f" stroke-width="1.5" class="signal-wave-delay" />
 
-  <!-- HUD Decorative Brackets / Borders -->
-  <!-- Top Left Corner -->
-  <path d="M 20,40 L 20,20 L 40,20" fill="none" stroke="#00e5ff" stroke-width="3" filter="url(#glow-cyan)" />
-  <!-- Bottom Left Corner -->
-  <path d="M 20,310 L 20,330 L 40,330" fill="none" stroke="#00e5ff" stroke-width="3" filter="url(#glow-cyan)" />
-  <!-- Top Right Corner -->
-  <path d="M 780,40 L 780,20 L 760,20" fill="none" stroke="#00e5ff" stroke-width="3" filter="url(#glow-cyan)" />
-  <!-- Bottom Right Corner -->
-  <path d="M 780,310 L 780,330 L 760,330" fill="none" stroke="#00e5ff" stroke-width="3" filter="url(#glow-cyan)" />
+  <!-- Corner Brackets -->
+  <path d="M 20,40 L 20,20 L 40,20" fill="none" stroke="#00e5ff" stroke-width="3" />
+  <path d="M 20,310 L 20,330 L 40,330" fill="none" stroke="#00e5ff" stroke-width="3" />
+  <path d="M 780,40 L 780,20 L 760,20" fill="none" stroke="#00e5ff" stroke-width="3" />
+  <path d="M 780,310 L 780,330 L 760,330" fill="none" stroke="#00e5ff" stroke-width="3" />
 
-  <!-- Code Elements / Binary Rain Simulation (Subtle) -->
+  <!-- Code Elements (Subtle) -->
   <g class="animated-pulse" opacity="0.15">
     <text x="50" y="70" class="mono-text">01101001 01101001 01101111 01110100</text>
     <text x="50" y="90" class="mono-text">sys.init_process(IIoT_specialization)</text>
@@ -249,7 +199,7 @@
 
   <!-- Profile Tech Status Badge -->
   <g transform="translate(60, 60)" class="animated-pulse">
-    <rect width="135" height="24" rx="12" fill="#161b22" stroke="#ff007f" stroke-width="1.5" filter="url(#glow-magenta)" />
+    <rect width="135" height="24" rx="12" fill="#161b22" stroke="#ff007f" stroke-width="1.5" />
     <circle cx="15" cy="12" r="5" fill="#ff007f" />
     <text x="28" y="16" class="mono-text" fill="#ff007f" font-weight="bold" font-size="11">SYSTEM ACTIVE //</text>
   </g>
@@ -272,13 +222,13 @@
   <!-- Interactive Floating Tags / Technologies -->
   <!-- MERN Badge -->
   <g transform="translate(60, 275)" class="floating-badge">
-    <rect width="115" height="26" rx="6" fill="#141b24" stroke="#00e5ff" stroke-width="1.2" filter="url(#glow-cyan)" />
+    <rect width="115" height="26" rx="6" fill="#141b24" stroke="#00e5ff" stroke-width="1.2" />
     <text x="57" y="17" class="badge-text" text-anchor="middle">MERN STACK</text>
   </g>
 
   <!-- Python Badge -->
   <g transform="translate(190, 275)" class="floating-badge-delay">
-    <rect width="90" height="26" rx="6" fill="#141b24" stroke="#ff007f" stroke-width="1.2" filter="url(#glow-magenta)" />
+    <rect width="90" height="26" rx="6" fill="#141b24" stroke="#ff007f" stroke-width="1.2" />
     <text x="45" y="17" class="badge-text" fill="#ff007f" text-anchor="middle">PYTHON</text>
   </g>
 
