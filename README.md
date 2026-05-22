@@ -5,30 +5,35 @@
   <img src="./header.svg" alt="Prakhar's Cyberpunk Banner" width="100%">
 </p>
 
-<!-- Realistic Futuristic Cyber Terminal Mockup (Extremely clean, replaces messy tables) -->
+<!-- Authentic macOS/Linux Terminal Emulator Mockup (Clean, realistic, no emojis) -->
 <div align="center">
-  <table border="0" cellpadding="0" cellspacing="0" style="border: 2px solid #ff007f; border-radius: 8px; background-color: #0c0e17; box-shadow: 0 0 20px rgba(255, 0, 127, 0.4); max-width: 700px; width: 100%;">
-    <tr>
-      <!-- Terminal Title Bar -->
-      <td style="background-color: #141729; padding: 10px 15px; border-bottom: 2px solid #ff007f; border-top-left-radius: 6px; border-top-right-radius: 6px;">
-        <span style="color: #00e5ff; font-weight: bold; font-family: 'Courier New', Courier, monospace; font-size: 13px;">💾 PROTOCOL://prakhar@iiot-core:~</span>
-        <span style="float: right; color: #ff007f; font-family: monospace; font-size: 13px; letter-spacing: 3px;">● ● ●</span>
-      </td>
-    </tr>
-    <tr>
-      <!-- Terminal Simulation Output -->
-      <td style="padding: 20px; font-family: 'Courier New', Courier, monospace; font-size: 14px; line-height: 1.6; color: #a9b1d6; text-align: left;">
-        <span style="color: #00e5ff;">prakhar@iiot-core:~$</span> ./initialize_profile.sh<br>
-        <span style="color: #ff007f;">[SYSTEM]</span> Loading cybernetic data cores... 100% loaded.<br>
-        <span style="color: #00e5ff;">[STATUS]</span> <b style="color: #00ff66; text-shadow: 0 0 5px #00ff66;">ONLINE // CONNECTION SECURE</b><br>
-        <span style="color: #ff007f;">[🎓 TRACK]</span> Pursuing B.Tech CS (Specialization in IIoT)<br>
-        <span style="color: #00e5ff;">[🌱 FOCUS]</span> Mastering MERN STACK &amp; Embedded Hardware Control<br>
-        <span style="color: #ff007f;">[📫 COMMS]</span> therockstarop9956@gmail.com<br>
-        <span style="color: #00e5ff;">[⚡ HUMOR]</span> Funny xD (Compile successful with 0 warnings)<br>
-        <span style="color: #00e5ff;">prakhar@iiot-core:~$</span> <span style="color: #ff007f; animation: blink 1s infinite;">_</span>
-      </td>
-    </tr>
-  </table>
+  <div style="max-width: 650px; border: 1px solid #30363d; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.6), 0 0 15px rgba(0, 229, 255, 0.15); overflow: hidden; background-color: #0d1117; font-family: 'Courier New', Courier, monospace;">
+    <!-- Terminal Title Bar -->
+    <div style="background-color: #161b22; padding: 10px 15px; display: flex; align-items: center; border-bottom: 1px solid #30363d;">
+      <!-- macOS style traffic lights -->
+      <div style="display: flex; gap: 6px;">
+        <span style="width: 12px; height: 12px; border-radius: 50%; background-color: #ff5f56; display: inline-block;"></span>
+        <span style="width: 12px; height: 12px; border-radius: 50%; background-color: #ffbd2e; display: inline-block;"></span>
+        <span style="width: 12px; height: 12px; border-radius: 50%; background-color: #27c93f; display: inline-block;"></span>
+      </div>
+      <!-- Center Title -->
+      <div style="flex-grow: 1; text-align: center; color: #8b949e; font-size: 12px; font-weight: bold; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">
+        bash - prakhar@iiot-core:~
+      </div>
+    </div>
+    <!-- Terminal Body Window -->
+    <div style="padding: 20px; text-align: left; font-size: 14px; line-height: 1.6; color: #c9d1d9;">
+      <span style="color: #58a6ff;">prakhar@iiot-core:~$</span> ./initialize_profile.sh<br>
+      <span style="color: #8b949e;">[+] Initializing cybernet telemetry...</span><br>
+      <span style="color: #56b6c2; font-weight: bold;">[+] STATUS         :</span> <span style="color: #58a6ff; font-weight: bold; text-shadow: 0 0 5px #58a6ff;">ONLINE</span><br>
+      <span style="color: #56b6c2; font-weight: bold;">[+] SPECIALIZATION :</span> CS Specialization in Industrial IoT (IIoT)<br>
+      <span style="color: #56b6c2; font-weight: bold;">[+] STACK_CORE     :</span> MERN Full-Stack Web &amp; Python Programming<br>
+      <span style="color: #56b6c2; font-weight: bold;">[+] COMMS_PORT     :</span> therockstarop9956@gmail.com<br>
+      <span style="color: #56b6c2; font-weight: bold;">[+] DIAGNOSTIC     :</span> Humor level stable (Funny xD)<br>
+      <br>
+      <span style="color: #58a6ff;">prakhar@iiot-core:~$</span> <span style="background-color: #58a6ff; color: #0d1117; display: inline-block; width: 8px; height: 15px; vertical-align: middle;"></span>
+    </div>
+  </div>
 </div>
 
 ---
@@ -112,7 +117,7 @@
       </td>
       <!-- Column 2: LeetCode & GitHub Activity ECG Graph -->
       <td width="50%" valign="top" align="center">
-        <h4>[ LEETCODE &amp; CYBER SIGNAL ]</h4>
+        <h4>[ LEETCODE &amp; LANGUAGES ]</h4>
         <img src="https://leetcard.jacoblin.cool/PrakharShukla42?theme=dark&font=Karma&ext=contest" alt="LeetCode Stats" width="100%" />
         <br/><br/>
         <!-- Stable mirror for languages -->
@@ -124,7 +129,7 @@
       <td colspan="2" align="center" style="padding-top: 15px;">
         <h4>[ RECENT HEARTBEAT SIGNAL ]</h4>
         <!-- Ultra-stable animated graph matching IIoT theme -->
-        <img src="https://github-readme-activity-graph.vercel.app/graph?username=PrakharShukla42&theme=tokyonight&bg_color=0c0e17&hide_border=false" width="98%" alt="GitHub Activity Graph" />
+        <img src="https://github-readme-activity-graph.vercel.app/graph?username=PrakharShukla42&theme=tokyonight&bg_color=0d1117&hide_border=false" width="98%" alt="GitHub Activity Graph" />
       </td>
     </tr>
   </table>
