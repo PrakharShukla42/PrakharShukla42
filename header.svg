@@ -1,243 +1,276 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="100%" height="100%">
   <defs>
-    <!-- Futuristic Styling with Safe System Monospace and Modern Sans-Serif Fonts (No external imports that CSP blocks) -->
+    <!-- Deep Cosmic Styles -->
     <style>
       .bg {
-        fill: #0a0b10;
-      }
-      .grid-lines {
-        stroke: #1f2335;
-        stroke-width: 1;
-        opacity: 0.3;
+        fill: url(#space-bg);
       }
       
-      /* Typography using standard beautiful fonts */
-      .title {
-        font-family: 'Courier New', Monaco, 'Courier', monospace, system-ui;
-        font-weight: 900;
-        font-size: 42px;
+      /* Typography */
+      .cosmic-title {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 44px;
         fill: #ffffff;
-        letter-spacing: 5px;
+        letter-spacing: 8px;
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4));
       }
-      .subtitle {
-        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      
+      .cosmic-subtitle {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        fill: #9d84ff;
+        letter-spacing: 4px;
+      }
+      
+      .cosmic-accent {
+        fill: #00ffcc;
         font-weight: 700;
-        font-size: 20px;
-        fill: #00e5ff;
-        letter-spacing: 3px;
-      }
-      .mono-text {
-        font-family: 'Courier New', Monaco, 'Courier', monospace;
-        font-size: 14px;
-        fill: #a9b1d6;
-      }
-      .badge-text {
-        font-family: 'Courier New', Monaco, 'Courier', monospace;
-        font-size: 12px;
-        fill: #00e5ff;
-        font-weight: bold;
       }
 
-      /* Keyframe Animations */
-      @keyframes pulse {
+      .telemetry-text {
+        font-family: 'Share Tech Mono', 'Courier New', monospace;
+        font-size: 11px;
+        fill: #616b91;
+        letter-spacing: 2px;
+      }
+      
+      .badge-text {
+        font-family: system-ui, -apple-system, sans-serif;
+        font-size: 11px;
+        fill: #ffffff;
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+
+      /* Animations */
+      @keyframes twinkle-slow {
+        0%, 100% { opacity: 0.2; transform: scale(0.8); }
+        50% { opacity: 1; transform: scale(1.2); }
+      }
+      
+      @keyframes twinkle-fast {
         0%, 100% { opacity: 0.3; }
-        50% { opacity: 0.9; }
+        50% { opacity: 1; }
       }
-      @keyframes dash {
-        to {
-          stroke-dashoffset: -80;
-        }
-      }
-      @keyframes rotateHUD {
+      
+      @keyframes orbit-rotate {
         from { transform: rotate(0deg); }
         to { transform: rotate(360deg); }
       }
-      @keyframes glitch {
-        0%, 100% { transform: translate(0); }
-        33% { transform: translate(-1px, 1px); }
-        66% { transform: translate(1px, -1px); }
-      }
-      @keyframes float {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-8px); }
-      }
-      @keyframes signal {
-        0% { r: 2px; opacity: 1; }
-        100% { r: 18px; opacity: 0; }
+
+      @keyframes nebula-pulse {
+        0%, 100% { opacity: 0.6; }
+        50% { opacity: 0.95; }
       }
 
-      /* Class Mappings to Animations */
-      .animated-pulse {
-        animation: pulse 3s infinite ease-in-out;
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-5px); }
       }
-      .animated-dash {
-        stroke-dasharray: 40, 40;
-        animation: dash 2s infinite linear;
+
+      /* Class Mappings */
+      .star-slow {
+        animation: twinkle-slow 4s infinite ease-in-out;
+        transform-origin: center;
       }
-      .hud-rotate {
-        transform-origin: 680px 175px;
-        animation: rotateHUD 25s infinite linear;
+      
+      .star-fast {
+        animation: twinkle-fast 2s infinite ease-in-out;
       }
-      .glitch-effect {
-        animation: glitch 4s infinite;
+      
+      .orbiting-system {
+        transform-origin: 660px 175px;
+        animation: orbit-rotate 60s infinite linear;
       }
-      .floating-badge {
-        animation: float 4s infinite ease-in-out;
+
+      .constellation-pulse {
+        animation: twinkle-fast 3s infinite ease-in-out;
       }
-      .floating-badge-delay {
-        animation: float 4s infinite ease-in-out;
-        animation-delay: 2s;
+      
+      .nebula-glow {
+        animation: nebula-pulse 8s infinite ease-in-out;
       }
-      .signal-wave {
-        transform-origin: 680px 175px;
-        animation: signal 2s infinite cubic-bezier(0.1, 0.8, 0.3, 1);
+
+      .glass-badge {
+        animation: float 5s infinite ease-in-out;
       }
-      .signal-wave-delay {
-        transform-origin: 680px 175px;
-        animation: signal 2s infinite cubic-bezier(0.1, 0.8, 0.3, 1);
-        animation-delay: 1s;
+      
+      .glass-badge-delay {
+        animation: float 5s infinite ease-in-out;
+        animation-delay: 2.5s;
       }
     </style>
 
-    <!-- Linear Gradients for neon-glow paths -->
-    <linearGradient id="neon-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00e5ff" />
-      <stop offset="50%" stop-color="#7928ca" />
-      <stop offset="100%" stop-color="#ff007f" />
+    <!-- Glowing Filters -->
+    <filter id="glow-star" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-nebula" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="25" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Gradients -->
+    <radialGradient id="space-bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a0826" />
+      <stop offset="60%" stop-color="#040314" />
+      <stop offset="100%" stop-color="#010105" />
+    </radialGradient>
+
+    <radialGradient id="nebula-purple" cx="65%" cy="45%" r="45%">
+      <stop offset="0%" stop-color="#3c156e" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#1b0840" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="nebula-teal" cx="30%" cy="60%" r="40%">
+      <stop offset="0%" stop-color="#064e52" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="#021d24" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="cosmic-neon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ffcc" />
+      <stop offset="50%" stop-color="#9d84ff" />
+      <stop offset="100%" stop-color="#ff00cc" />
     </linearGradient>
-    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0c0e17" />
-      <stop offset="50%" stop-color="#141729" />
-      <stop offset="100%" stop-color="#06070a" />
+
+    <linearGradient id="orbit-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#616b91" stop-opacity="0.1" />
+      <stop offset="50%" stop-color="#9d84ff" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#616b91" stop-opacity="0.1" />
     </linearGradient>
   </defs>
 
-  <!-- Background Layer -->
-  <rect width="800" height="350" fill="url(#bg-grad)" />
+  <!-- Cosmic Background Layer -->
+  <rect width="800" height="350" fill="url(#space-bg)" />
 
-  <!-- Futuristic Grid Overlay -->
-  <g class="grid-lines">
-    <!-- Vertical lines -->
-    <line x1="40" y1="0" x2="40" y2="350" />
-    <line x1="80" y1="0" x2="80" y2="350" />
-    <line x1="120" y1="0" x2="120" y2="350" />
-    <line x1="160" y1="0" x2="160" y2="350" />
-    <line x1="200" y1="0" x2="200" y2="350" />
-    <line x1="240" y1="0" x2="240" y2="350" />
-    <line x1="280" y1="0" x2="280" y2="350" />
-    <line x1="320" y1="0" x2="320" y2="350" />
-    <line x1="360" y1="0" x2="360" y2="350" />
-    <line x1="400" y1="0" x2="400" y2="350" />
-    <line x1="440" y1="0" x2="440" y2="350" />
-    <line x1="480" y1="0" x2="480" y2="350" />
-    <line x1="520" y1="0" x2="520" y2="350" />
-    <line x1="560" y1="0" x2="560" y2="350" />
-    <line x1="600" y1="0" x2="600" y2="350" />
-    <line x1="640" y1="0" x2="640" y2="350" />
-    <line x1="680" y1="0" x2="680" y2="350" />
-    <line x1="720" y1="0" x2="720" y2="350" />
-    <line x1="760" y1="0" x2="760" y2="350" />
+  <!-- Glowing Nebulae -->
+  <rect width="800" height="350" fill="url(#nebula-purple)" class="nebula-glow" filter="url(#glow-nebula)" />
+  <rect width="800" height="350" fill="url(#nebula-teal)" class="nebula-glow" filter="url(#glow-nebula)" style="animation-delay: 4s;" />
+
+  <!-- Starfield Layer -->
+  <g fill="#ffffff">
+    <circle cx="75" cy="45" r="1" class="star-slow" style="animation-delay: 0.5s;" />
+    <circle cx="150" cy="80" r="1.5" class="star-slow" style="animation-delay: 1.2s; fill: #e2d9ff;" filter="url(#glow-star)" />
+    <circle cx="280" cy="50" r="0.8" class="star-slow" style="animation-delay: 2.3s;" />
+    <circle cx="340" cy="110" r="1.2" class="star-slow" style="animation-delay: 0.8s;" />
+    <circle cx="480" cy="40" r="1" class="star-slow" style="animation-delay: 3.1s; fill: #d4ffff;" />
+    <circle cx="560" cy="90" r="1.5" class="star-slow" style="animation-delay: 1.7s;" filter="url(#glow-star)" />
+    <circle cx="720" cy="60" r="0.8" class="star-slow" style="animation-delay: 0.2s;" />
     
-    <!-- Horizontal lines -->
-    <line x1="0" y1="40" x2="800" y2="40" />
-    <line x1="0" y1="80" x2="800" y2="80" />
-    <line x1="0" y1="120" x2="800" y2="120" />
-    <line x1="0" y1="160" x2="800" y2="160" />
-    <line x1="0" y1="200" x2="800" y2="200" />
-    <line x1="0" y1="240" x2="800" y2="240" />
-    <line x1="0" y1="280" x2="800" y2="280" />
-    <line x1="0" y1="320" x2="800" y2="320" />
+    <circle cx="90" cy="300" r="1.2" class="star-slow" style="animation-delay: 2.8s;" />
+    <circle cx="210" cy="240" r="1.5" class="star-slow" style="animation-delay: 0.4s; fill: #ffd4f7;" filter="url(#glow-star)" />
+    <circle cx="420" cy="290" r="0.8" class="star-slow" style="animation-delay: 1.9s;" />
+    <circle cx="520" cy="270" r="1" class="star-slow" style="animation-delay: 3.5s;" />
+    <circle cx="780" cy="260" r="1.2" class="star-slow" style="animation-delay: 1.1s;" />
   </g>
 
-  <!-- Tech circuit line along the bottom -->
-  <path d="M 0,330 L 180,330 L 210,300 L 450,300 L 470,320 L 800,320" 
-        fill="none" stroke="url(#neon-grad)" stroke-width="3" />
-  <path d="M 0,330 L 180,330 L 210,300 L 450,300 L 470,320 L 800,320" 
-        fill="none" stroke="#ffffff" stroke-width="1.2" class="animated-dash" />
-
-  <!-- Heads-Up Display (HUD) Rotating Element on Right -->
-  <g class="hud-rotate" opacity="0.5">
-    <circle cx="680" cy="175" r="90" fill="none" stroke="#00e5ff" stroke-width="1" stroke-dasharray="10, 20" />
-    <circle cx="680" cy="175" r="75" fill="none" stroke="#ff007f" stroke-width="1.5" stroke-dasharray="40, 15" />
-    <circle cx="680" cy="175" r="60" fill="none" stroke="#00e5ff" stroke-width="0.75" />
-    <circle cx="680" cy="175" r="45" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="4, 4" />
-    <path d="M 680,115 L 680,130 M 680,220 L 680,235 M 620,175 L 635,175 M 725,175 L 740,175" stroke="#00e5ff" stroke-width="2" />
-    <polygon points="680,165 685,178 675,178" fill="none" stroke="#00e5ff" stroke-width="1" />
+  <g fill="#ffffff" opacity="0.7">
+    <circle cx="40" cy="130" r="0.8" class="star-fast" style="animation-delay: 0.1s;" />
+    <circle cx="190" cy="160" r="1" class="star-fast" style="animation-delay: 0.9s;" />
+    <circle cx="250" cy="280" r="0.6" class="star-fast" style="animation-delay: 1.5s;" />
+    <circle cx="390" cy="210" r="1.2" class="star-fast" style="animation-delay: 0.4s;" />
+    <circle cx="450" cy="150" r="0.8" class="star-fast" style="animation-delay: 2.1s;" />
+    <circle cx="630" cy="290" r="1" class="star-fast" style="animation-delay: 1.3s;" />
+    <circle cx="760" cy="120" r="0.7" class="star-fast" style="animation-delay: 0.7s;" />
   </g>
 
-  <!-- Dynamic Glowing IIoT Nodes Overlay on Right -->
-  <g class="animated-pulse">
-    <!-- Node 1 (Center) -->
-    <circle cx="680" cy="175" r="6" fill="#00e5ff" />
-    <!-- Node 2 (Top Left) -->
-    <circle cx="610" cy="110" r="5" fill="#ff007f" />
-    <line x1="680" y1="175" x2="610" y2="110" stroke="#ff007f" stroke-width="1.5" opacity="0.6" stroke-dasharray="5,5" />
-    <!-- Node 3 (Bottom Left) -->
-    <circle cx="600" cy="240" r="5" fill="#00e5ff" />
-    <line x1="680" y1="175" x2="600" y2="240" stroke="#00e5ff" stroke-width="1" opacity="0.6" />
-    <!-- Node 4 (Top Right) -->
-    <circle cx="750" cy="100" r="4" fill="#00e5ff" opacity="0.8" />
-    <line x1="680" y1="175" x2="750" y2="100" stroke="#00e5ff" stroke-width="0.75" opacity="0.4" />
+  <!-- Celestial Coordinate Telemetry -->
+  <g stroke="#ffffff" stroke-opacity="0.04" fill="none">
+    <line x1="0" y1="175" x2="800" y2="175" stroke-dasharray="8, 8" />
+    <line x1="0" y1="87" x2="800" y2="87" />
+    <line x1="0" y1="262" x2="800" y2="262" />
+    
+    <path d="M 400,0 A 400,350 0 0,1 400,350" />
+    <path d="M 200,0 A 300,350 0 0,1 200,350" />
+    <path d="M 600,0 A 300,350 0 0,1 600,350" />
   </g>
 
-  <!-- Glowing waves emitting from center node -->
-  <circle cx="680" cy="175" r="10" fill="none" stroke="#00e5ff" stroke-width="1.5" class="signal-wave" />
-  <circle cx="680" cy="175" r="10" fill="none" stroke="#ff007f" stroke-width="1.5" class="signal-wave-delay" />
+  <!-- Constellation Map (IIoT Constellation) -->
+  <g class="constellation-pulse" stroke="#9d84ff" stroke-opacity="0.3" stroke-width="1" fill="none">
+    <line x1="660" y1="175" x2="600" y2="100" />
+    <line x1="660" y1="175" x2="710" y2="250" />
+    <line x1="600" y1="100" x2="520" y2="150" />
+    <line x1="710" y1="250" x2="740" y2="140" />
+    <line x1="600" y1="100" x2="740" y2="140" />
+    <line x1="520" y1="150" x2="580" y2="230" />
+    <line x1="580" y1="230" x2="710" y2="250" />
 
-  <!-- Corner Brackets -->
-  <path d="M 20,40 L 20,20 L 40,20" fill="none" stroke="#00e5ff" stroke-width="3" />
-  <path d="M 20,310 L 20,330 L 40,330" fill="none" stroke="#00e5ff" stroke-width="3" />
-  <path d="M 780,40 L 780,20 L 760,20" fill="none" stroke="#00e5ff" stroke-width="3" />
-  <path d="M 780,310 L 780,330 L 760,330" fill="none" stroke="#00e5ff" stroke-width="3" />
-
-  <!-- Code Elements (Subtle) -->
-  <g class="animated-pulse" opacity="0.15">
-    <text x="50" y="70" class="mono-text">01101001 01101001 01101111 01110100</text>
-    <text x="50" y="90" class="mono-text">sys.init_process(IIoT_specialization)</text>
-    <text x="50" y="110" class="mono-text">const mern = ['M', 'E', 'R', 'N'];</text>
+    <g fill="#ffffff">
+      <circle cx="660" cy="175" r="5" fill="#00ffcc" filter="url(#glow-star)" />
+      <circle cx="660" cy="175" r="2" fill="#ffffff" />
+      
+      <circle cx="600" cy="100" r="3.5" filter="url(#glow-star)" />
+      <circle cx="710" cy="250" r="3.5" filter="url(#glow-star)" />
+      <circle cx="520" cy="150" r="3" fill="#9d84ff" />
+      <circle cx="740" cy="140" r="3" fill="#9d84ff" />
+      <circle cx="580" cy="230" r="3" fill="#9d84ff" />
+    </g>
   </g>
 
-  <!-- Profile Tech Status Badge -->
-  <g transform="translate(60, 60)" class="animated-pulse">
-    <rect width="135" height="24" rx="12" fill="#161b22" stroke="#ff007f" stroke-width="1.5" />
-    <circle cx="15" cy="12" r="5" fill="#ff007f" />
-    <text x="28" y="16" class="mono-text" fill="#ff007f" font-weight="bold" font-size="11">SYSTEM ACTIVE //</text>
+  <!-- Orbiting Paths -->
+  <g class="orbiting-system" fill="none">
+    <circle cx="660" cy="175" r="70" stroke="url(#orbit-grad)" stroke-width="1.2" stroke-dasharray="15, 10" />
+    <circle cx="718" cy="138" r="4.5" fill="#00ffcc" filter="url(#glow-star)" />
+    <circle cx="718" cy="138" r="2" fill="#ffffff" />
+
+    <circle cx="660" cy="175" r="105" stroke="url(#orbit-grad)" stroke-width="0.8" />
+    
+    <circle cx="660" cy="175" r="140" stroke="url(#orbit-grad)" stroke-width="1.5" stroke-dasharray="5, 8" />
+    <g transform="translate(562, 75)">
+      <circle cx="0" cy="0" r="5" fill="#ff00cc" filter="url(#glow-star)" />
+      <ellipse rx="9" ry="2.5" fill="none" stroke="#ffffff" stroke-width="0.8" transform="rotate(-15)" />
+    </g>
+  </g>
+
+  <!-- Cosmic Telemetry -->
+  <g transform="translate(45, 45)" opacity="0.85">
+    <text x="0" y="0" class="telemetry-text"><tspan fill="#00ffcc">✦</tspan> SECTOR: ORION-ARM // DEEP_SPACE_CORES</text>
+    <text x="0" y="15" class="telemetry-text">COORD: RA 14h 29m 43s | DEC +31° 17' 40"</text>
+  </g>
+
+  <g transform="translate(45, 315)" opacity="0.6">
+    <text x="0" y="0" class="telemetry-text">TELEMETRY: ONLINE // PHYSICAL-DIGITAL MERGE: 100%</text>
   </g>
 
   <!-- Main Info Section -->
-  <g transform="translate(60, 140)">
-    <!-- Greetings -->
-    <text x="0" y="0" class="subtitle">HELLO WORLD, I'M</text>
+  <g transform="translate(60, 130)">
+    <text x="0" y="0" class="cosmic-subtitle">EXPLORING THE COSMOS, I'M</text>
     
-    <!-- Glitched Name -->
-    <text x="0" y="45" class="title glitch-effect">PRAKHAR SHUKLA</text>
+    <text x="0" y="45" class="cosmic-title">PRAKHAR SHUKLA</text>
     
-    <!-- Specialization -->
-    <text x="0" y="75" class="subtitle" fill="#ffffff" font-size="18">B.Tech CS <tspan fill="#ff007f">|</tspan> Specialization in IIoT</text>
+    <text x="0" y="78" class="cosmic-subtitle" fill="#ffffff" font-size="17">B.Tech CS <tspan fill="#00ffcc">|</tspan> Specialization in <tspan class="cosmic-accent">IIoT</tspan></text>
     
-    <!-- Description / Bio -->
-    <text x="0" y="105" class="mono-text" fill="#8b949e" font-size="15">&gt; MERN Stack Developer &amp; Python Programmer</text>
+    <text x="0" y="105" class="telemetry-text" fill="#a4b3e6" font-size="13">&gt; BRIDGING CYBER SYSTEMS &amp; INDUSTRIAL HARDWARE NETWORKS</text>
   </g>
 
-  <!-- Interactive Floating Tags / Technologies -->
-  <!-- MERN Badge -->
-  <g transform="translate(60, 275)" class="floating-badge">
-    <rect width="115" height="26" rx="6" fill="#141b24" stroke="#00e5ff" stroke-width="1.2" />
+  <!-- Sleek Badges at Bottom -->
+  <g transform="translate(60, 260)" class="glass-badge">
+    <rect width="115" height="26" rx="6" fill="#080826" fill-opacity="0.6" stroke="#9d84ff" stroke-opacity="0.5" stroke-width="1" />
     <text x="57" y="17" class="badge-text" text-anchor="middle">MERN STACK</text>
   </g>
 
-  <!-- Python Badge -->
-  <g transform="translate(190, 275)" class="floating-badge-delay">
-    <rect width="90" height="26" rx="6" fill="#141b24" stroke="#ff007f" stroke-width="1.2" />
-    <text x="45" y="17" class="badge-text" fill="#ff007f" text-anchor="middle">PYTHON</text>
+  <g transform="translate(190, 260)" class="glass-badge-delay">
+    <rect width="90" height="26" rx="6" fill="#080826" fill-opacity="0.6" stroke="#00ffcc" stroke-opacity="0.5" stroke-width="1" />
+    <text x="45" y="17" class="badge-text" fill="#00ffcc" text-anchor="middle">PYTHON</text>
   </g>
 
-  <!-- IIoT Badge -->
-  <g transform="translate(295, 275)" class="floating-badge">
-    <rect width="75" height="26" rx="6" fill="#141b24" stroke="#ffffff" stroke-width="1.2" />
+  <g transform="translate(295, 260)" class="glass-badge">
+    <rect width="75" height="26" rx="6" fill="#080826" fill-opacity="0.6" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1" />
     <text x="37.5" y="17" class="badge-text" fill="#ffffff" text-anchor="middle">IIoT</text>
   </g>
 
-  <!-- Scanline Cyberpunk Effect -->
-  <rect width="800" height="4" fill="#ffffff" opacity="0.04" class="animated-pulse" y="160" />
+  <!-- Glowing Accent Line -->
+  <path d="M 0,345 L 800,345" fill="none" stroke="url(#cosmic-neon)" stroke-width="1.5" opacity="0.6" />
 </svg>
