@@ -5,44 +5,31 @@
   <img src="./header.svg" alt="Prakhar's Cyberpunk Banner" width="100%">
 </p>
 
----
-
-### <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/coding.gif" width="30px"> About Me
-
-<table width="100%" border="0" cellpadding="10" cellspacing="0">
-  <tr>
-    <td width="60%" valign="top">
-      <p align="justify">
-        ⚡ <b>System Status:</b> Online and executing instructions.<br>
-        🎓 <b>Core Track:</b> Pursuing B.Tech in Computer Science with a specialization in <b>Industrial Internet of Things (IIoT)</b>.<br>
-        💡 <b>Mission:</b> Bridging the gap between the physical and digital worlds using robust web architectures and intelligent hardware integrations.<br>
-        🌱 <b>Current Compile Goal:</b> Diving deep into the <b>MERN Stack</b> to build ultra-scalable, full-stack cyber web systems.<br>
-        ⚡ <b>Fun Fact:</b> I am funny xD — code compiled successfully with 0 errors and a good sense of humor!
-      </p>
-    </td>
-    <td width="40%" align="center" valign="middle">
-      <img src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif" alt="Coding Simulation" width="100%" style="border-radius: 12px; border: 2px solid #ff007f;">
-    </td>
-  </tr>
-</table>
-
----
-
-### 🌐 Cyber Net Connections
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/prakhar-shukla-b2362a252/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-00E5FF?style=for-the-badge&logo=linkedin&logoColor=050811&labelColor=ffffff" alt="LinkedIn" height="35" />
-  </a>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://leetcode.com/u/therockstarop9956/" target="_blank">
-    <img src="https://img.shields.io/badge/LeetCode-FF007F?style=for-the-badge&logo=leetcode&logoColor=ffffff&labelColor=141729" alt="LeetCode" height="35" />
-  </a>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="mailto:therockstarop9956@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Email-therockstarop9956%40gmail.com-00E5FF?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=141729" alt="Email" height="35" />
-  </a>
-</p>
+<!-- Realistic Futuristic Cyber Terminal Mockup (Extremely clean, replaces messy tables) -->
+<div align="center">
+  <table border="0" cellpadding="0" cellspacing="0" style="border: 2px solid #ff007f; border-radius: 8px; background-color: #0c0e17; box-shadow: 0 0 20px rgba(255, 0, 127, 0.4); max-width: 700px; width: 100%;">
+    <tr>
+      <!-- Terminal Title Bar -->
+      <td style="background-color: #141729; padding: 10px 15px; border-bottom: 2px solid #ff007f; border-top-left-radius: 6px; border-top-right-radius: 6px;">
+        <span style="color: #00e5ff; font-weight: bold; font-family: 'Courier New', Courier, monospace; font-size: 13px;">💾 PROTOCOL://prakhar@iiot-core:~</span>
+        <span style="float: right; color: #ff007f; font-family: monospace; font-size: 13px; letter-spacing: 3px;">● ● ●</span>
+      </td>
+    </tr>
+    <tr>
+      <!-- Terminal Simulation Output -->
+      <td style="padding: 20px; font-family: 'Courier New', Courier, monospace; font-size: 14px; line-height: 1.6; color: #a9b1d6; text-align: left;">
+        <span style="color: #00e5ff;">prakhar@iiot-core:~$</span> ./initialize_profile.sh<br>
+        <span style="color: #ff007f;">[SYSTEM]</span> Loading cybernetic data cores... 100% loaded.<br>
+        <span style="color: #00e5ff;">[STATUS]</span> <b style="color: #00ff66; text-shadow: 0 0 5px #00ff66;">ONLINE // CONNECTION SECURE</b><br>
+        <span style="color: #ff007f;">[🎓 TRACK]</span> Pursuing B.Tech CS (Specialization in IIoT)<br>
+        <span style="color: #00e5ff;">[🌱 FOCUS]</span> Mastering MERN STACK &amp; Embedded Hardware Control<br>
+        <span style="color: #ff007f;">[📫 COMMS]</span> therockstarop9956@gmail.com<br>
+        <span style="color: #00e5ff;">[⚡ HUMOR]</span> Funny xD (Compile successful with 0 warnings)<br>
+        <span style="color: #00e5ff;">prakhar@iiot-core:~$</span> <span style="color: #ff007f; animation: blink 1s infinite;">_</span>
+      </td>
+    </tr>
+  </table>
+</div>
 
 ---
 
@@ -92,24 +79,52 @@
 
 ---
 
+### 🌐 Cyber Net Connections
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/prakhar-shukla-b2362a252/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-00E5FF?style=for-the-badge&logo=linkedin&logoColor=050811&labelColor=ffffff" alt="LinkedIn" height="35" />
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://leetcode.com/u/therockstarop9956/" target="_blank">
+    <img src="https://img.shields.io/badge/LeetCode-FF007F?style=for-the-badge&logo=leetcode&logoColor=ffffff&labelColor=141729" alt="LeetCode" height="35" />
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="mailto:therockstarop9956@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Email-therockstarop9956%40gmail.com-00E5FF?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=141729" alt="Email" height="35" />
+  </a>
+</p>
+
+---
+
 ### 📊 System Diagnostics & Cyber Stats
 
 <div align="center">
   <table border="0" cellpadding="5" cellspacing="5" width="100%">
     <tr>
-      <!-- Column 1: GitHub & Streak Stats -->
+      <!-- Column 1: GitHub Stats Mirror (Using high-reliability endpoints) -->
       <td width="50%" valign="top" align="center">
         <h4>[ GITHUB PROTOCOLS ]</h4>
-        <img src="https://github-readme-stats.vercel.app/api?username=PrakharShukla42&show_icons=true&theme=tokyonight&count_private=true&hide_border=false" width="100%" alt="GitHub Stats" />
+        <!-- Mirror endpoint for maximum reliability -->
+        <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=PrakharShukla42&show_icons=true&theme=tokyonight&count_private=true&hide_border=false" width="100%" alt="GitHub Stats" />
         <br/><br/>
         <img src="https://github-readme-streak-stats.herokuapp.com/?user=PrakharShukla42&theme=tokyonight&hide_border=false" width="100%" alt="Streak Stats" />
       </td>
-      <!-- Column 2: Languages & LeetCode -->
+      <!-- Column 2: LeetCode & GitHub Activity ECG Graph -->
       <td width="50%" valign="top" align="center">
-        <h4>[ LEETCODE &amp; LANGUAGES ]</h4>
+        <h4>[ LEETCODE &amp; CYBER SIGNAL ]</h4>
         <img src="https://leetcard.jacoblin.cool/PrakharShukla42?theme=dark&font=Karma&ext=contest" alt="LeetCode Stats" width="100%" />
         <br/><br/>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PrakharShukla42&layout=compact&theme=tokyonight" width="100%" alt="Top Languages" />
+        <!-- Stable mirror for languages -->
+        <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=PrakharShukla42&layout=compact&theme=tokyonight" width="100%" alt="Top Languages" />
+      </td>
+    </tr>
+    <!-- Full-Width Row: Cyber Signal ECG Graph -->
+    <tr>
+      <td colspan="2" align="center" style="padding-top: 15px;">
+        <h4>[ RECENT HEARTBEAT SIGNAL ]</h4>
+        <!-- Ultra-stable animated graph matching IIoT theme -->
+        <img src="https://github-readme-activity-graph.vercel.app/graph?username=PrakharShukla42&theme=tokyonight&bg_color=0c0e17&hide_border=false" width="98%" alt="GitHub Activity Graph" />
       </td>
     </tr>
   </table>
@@ -130,6 +145,7 @@
   <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" alt="snake animation" width="80%"/>
 </p>
 
+<!-- Glowing, highly reliable visitor badge that never fails -->
 <p align="center">
-  <img src="https://komarev.com/normal-badge/?username=PrakharShukla42&color=00e5ff&style=flat-square&label=SYS+ACCESS+COUNT" alt="Profile views tracker" />
+  <img src="https://api.visitorbadge.io/api/visitors?path=PrakharShukla42.PrakharShukla42&label=SYSTEM%20ACCESS%20COUNT&countColor=%2300e5ff&labelColor=%23141729&style=flat-square" alt="Visitor counter" />
 </p>
